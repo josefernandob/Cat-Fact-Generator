@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%; /* Garante que ocupe a largura total em telas menores */
+}
+
+h1 {
+    color: #4a4e69;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: #ffe8d6;
+    border-left: 5px solid #ffb5a7;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+    font-style: italic;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+button {
+    background-color: #a2d2ff;
+    color: #333;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s;
+    width: 100%; /* Responsivo: ocupa a largura total */
+    max-width: 300px; /* Limita o tamanho em telas grandes */
+}
+
+button:hover {
+    background-color: #8ac0ff;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Media Query para responsividade: garante que o corpo fique alinhado ao topo em telas muito pequenas */
+@media (max-width: 600px) {
+    body {
+        align-items: flex-start;
+    }
+}
